@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Neurond AI</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/b81e345460.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -18,13 +20,15 @@
                         alt="NeurondAI-logo" class="nav-link__logo__img">
                     </a>
                 </span>
-                <div id="responsive-navbar-nav">
+                <div class="responsive-navbar-nav">
                     <div class="navbar-nav">
                         <div class="dropdown">
-                            <div>
+                            <div class="dropdown_row">
                                 <a href="#" class="navbar__menu">services</a>
-                                <div class="navbar__menu">
-                                    <i class="fa-solid fa-caret-down"></i>
+                                <div class="navbar__menu-icon">
+                                    <svg class="navbar__menu__caret-down" viewBox="0 0 320 512" role="img">
+                                        <path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path>
+                                    </svg>
                                 </div>
                             </div>
                             <div class="dropdown__content">
@@ -34,20 +38,22 @@
                                 <a href="#" class="navbar__menu-service">data science and analytics solutions</a>
                             </div>
                         </div>
-                        <a href="#" class="navbar__menu">company</a>
+                        <a href="#" class="navbar__menu-link">company</a>
                         <div class="dropdown">
-                            <div>
+                            <div class="dropdown_row">
                                 <a href="#" class="navbar__menu">blog</a>
-                                <div class="navbar__menu">
-                                    <i class="fa-solid fa-caret-down"></i>
+                                <div class="navbar__menu-icon">
+                                    <svg class="navbar__menu__caret-down" viewBox="0 0 320 512" role="img">
+                                        <path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path>
+                                    </svg>
                                 </div>
                             </div>
                             <div class="dropdown__content">
                                 <a href="#" class="navbar__menu-service">artificial intelligence</a>
                             </div>
                         </div>
-                        <a href="#" class="navbar__menu">careers</a>
-                        <a href="#" class="navbar__menu">contact</a>
+                        <a href="#" class="navbar__menu-link">careers</a>
+                        <a href="#" class="navbar__menu-link">contact</a>
                     </div>
                 </div>
             </nav>
@@ -69,7 +75,7 @@
                     <div class="article__block">
                         <div class="article__block__headline"></div>
                         <h2 class="article__block__title">We Solve Problems</h2>
-                        <p class="arrticle__block__desscription">
+                        <p class="article__block__description">
                             Every organization has a unique mountain to climb. We are hyper-focused on developing artificial intelligence 
                             and machine learning solutions that will help you reach the peak.
                         </p>
@@ -85,7 +91,7 @@
                     <div class="article__block">
                         <div class="article__block__headline"></div>
                         <h2 class="article__block__title">The Best In The Business</h2>
-                        <p class="arrticle__block__desscription">
+                        <p class="article__block__description">
                             When you work with us, you are partnering with a team with over 15 years of experience in creating state-of-the-art technical solutions. 
                             We have unrivalled expertise in data science and artificial intelligence. We harness that knowledge to push your business to new heights.
                         </p>
@@ -102,7 +108,7 @@
                     <div class="article__block">
                         <div class="article__block__headline"></div>
                         <h2 class="article__block__title">Re-imagine Your Process</h2>
-                        <p class="arrticle__block__desscription">
+                        <p class="article__block__description">
                             Revolutionize the way you work. Our goal is to help you be more effective, more creative and push your business further than you thought possible. 
                             Our solutions have changed the way companies approach working. Whether that be through bespoke machine learning algorithms, 
                             a custom computer vision solution or a tailored forecasting tool, you can be confident we will find the right solution to make an impact.
@@ -119,11 +125,11 @@
                     <div class="article__block">
                         <div class="article__block__headline"></div>
                         <h2 class="article__block__title">Leverage AI Through Personal Interactions</h2>
-                        <p class="arrticle__block__desscription">
+                        <p class="article__block__description">
                             Your problems are our problems. Our people-first approach allows us to understand your business and its challenges intimately. 
                             We strive to implement solutions that add realvalue, discover useful insights and make your business more cost effective.
                         </p>
-                        <p class="arrticle__block__desscription">
+                        <p class="article__block__description">
                             At Neurond AI, we want to see the power of AI gain momentum and grow exponentially. 
                             With the right strategy, all businesses can gain immensely from implementing AI-powered technology.
                         </p>
@@ -132,15 +138,15 @@
             </section>
         </main>
 
-        <div></div>
+        <!-- <div></div> -->
 
         <footer>
             <div class="footer-container">
                 <div class="responsive-footer">
                     <div class="responsive-footer__column1">
-                        <h3 class="responsive-footer__column1__logo">
+                        <div class="responsive-footer__column1__logo">
                             <img src="https://cdn.neurond.com/neurondasset/assets/image/branch/logo/neurond-final-white.svg" alt="NeurondAI-logo" class="responsive-footer__logo">
-                        </h3>
+                        </div>
                         <div class="responsive-footer__column1__div2">
                             <h3 class="responsive-footer__h3">Contact Us</h3>
                             <ul class="responsive-footer__list-contact">
@@ -165,11 +171,11 @@
                                 Level 21 Shiodome Shibarikyu Building, 1-2-3 Kaigan, Minato-ku, Tokyo 105-0022, Japan
                             </p>
                         </div>
-                    </div>
-                    <div class="responsive-footer__column2-div2">
-                        <p class="coppyright">
-                            <small>Copyright © 2021 Neurond Technology JSC.</small>
-                        </p>
+                        <div class="responsive-footer__column2-div2">
+                            <p class="coppyright">
+                                <small>Copyright © 2021 Neurond Technology JSC.</small>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
