@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Neurond AI</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="https://www.neurond.com/favicon.svg?v=e12740d8a74aaae3b8b4e24eeec0bf04">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -20,6 +21,13 @@
                         alt="NeurondAI-logo" class="nav-link__logo__img">
                     </a>
                 </span>
+                <button class="hamburger-menu" onclick="showMenu()">
+                    <!-- <span> -->
+                        <svg class="hamburger-menu__icon" viewBox="0 0 30 30" role="img">
+                            <path stroke="rgba(255, 255, 255, 0.5)" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path>
+                        </svg>
+                    <!-- </span> -->
+                </button>
                 <div class="responsive-navbar-nav">
                     <div class="navbar-nav">
                         <div class="dropdown">
@@ -181,5 +189,11 @@
             </div>
         </footer>
     </div>
+
+    <script>
+        function showMenu(){
+            document.querySelector('.responsive-navbar-nav').classList.toggle('show');
+        }
+    </script>
 </body>
 </html>
