@@ -18,8 +18,8 @@ footer
                         - const cnt = ['+84 236 3649 822 (EN)', '+81 35 403 5934 (日本語)', 'contact@neurond.com']
                         each n, i in cnt 
                             if i === (cnt.length - 1)
-                                li.contact
-                                    a.mail-contact(class="mt-2" href="mailto:contact@neurond.com")= n 
+                                li.contact(class="mt-2")
+                                    a.mail-contact(href="mailto:contact@neurond.com")= n 
                             else 
                                 li.contact= n 
             .responsive-footer__column2(class="col-md-6")
